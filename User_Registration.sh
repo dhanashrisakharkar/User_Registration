@@ -4,7 +4,7 @@ echo "Welcome to User Registration"
 
 read -p "Enter the name : " Password
 
-pat='^[a-zA-Z]{8,13}$'
+pat='^[a-zA-Z]{8,13}[0-9]{1,}$'
 
 if [[ $Password =~ $pat ]]
 then
