@@ -2,11 +2,11 @@
 
 echo "Welcome to User Registration"
 
-read -p "Enter the name : " MobileNo
+read -p "Enter the name : " Password
 
-pat='^((91){1})?[ ]{1}[0-9]{10}$'
+pat='^[a-zA-Z]{8,13}$'
 
-if [[ $MobileNo =~ $pat ]]
+if [[ $Password =~ $pat ]]
 then
      echo "Valid Name"
 else
